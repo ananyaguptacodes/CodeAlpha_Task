@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <H1 id="Heading">Welcome to the Gallery!!</H1>
+    <div class="full_display" id="fullDis">
+        <img src="img1.jpg" alt="" id="fullImg">
+        <span onclick="closeFullImg()">x</span>
+    </div>
+
+    <div class="img_box">
+        <img src="https://t3.ftcdn.net/jpg/02/64/31/46/240_F_264314658_bMWblZcsJj9XTTwkOo1l4Z3eOIx9T3Qv.jpg" alt="" onclick="openFullImg(this.src)">
+        <img src="https://t4.ftcdn.net/jpg/00/86/93/13/240_F_86931350_yys0clXOBmAZLq2cKQwoy0cG9aS3qCDf.jpg" alt="" onclick="openFullImg(this.src)">
+        <img src="https://t4.ftcdn.net/jpg/02/67/21/91/240_F_267219153_5zo2EvKLo0IPrhiIInb21H0StKTmoHOj.jpg" alt="" onclick="openFullImg(this.src)">
+        <img src="https://t4.ftcdn.net/jpg/01/75/16/81/240_F_175168193_q20ClSiiKVOe36SjJywBDO0OFbMjXonE.jpg" alt="" onclick="openFullImg(this.src)">
+        <img src="https://t3.ftcdn.net/jpg/08/36/53/86/240_F_836538618_oFhKE7bdt7NKiGxAcvARyfdNhKg3rKJ2.jpg" alt="" onclick="openFullImg(this.src)">
+        <img src="https://t3.ftcdn.net/jpg/04/40/46/82/240_F_440468243_GEDgt3sRa1ulDStyXX5ZbtVgvJSBcIgi.jpg" alt="" onclick="openFullImg(this.src)">
+        <img src="https://t3.ftcdn.net/jpg/08/12/74/54/360_F_812745459_wypvYY7Pppyk26TvVaoGIvAYksqVUck4.jpg" alt="" onclick="openFullImg(this.src)">
+        <img src="https://t3.ftcdn.net/jpg/03/16/58/52/240_F_316585275_fwgIerseiM8nvh7CR4qJKSJz0ezmqovM.jpg" alt="" onclick="openFullImg(this.src)">
+        <img src="https://t3.ftcdn.net/jpg/02/18/65/80/240_F_218658014_x4srXmpUc5C9gRveHdh7S8SGkU87HAA4.jpg" alt="" onclick="openFullImg(this.src)">
+        <img src="https://t4.ftcdn.net/jpg/03/02/41/95/240_F_302419571_KbPUN1cW30HnbFgWrOeQ5s2N6N0EKSWV.jpg" alt="" onclick="openFullImg(this.src)">
+    </div>
+<script>
+    var fullDis = document.getElementById("fullDis");
+    var fullImg = document.getElementById("fullImg");
+
+    function openFullImg(pic){
+        fullDis.style.display = "flex";
+        fullImg.src = pic;
+    }
+
+    function closeFullImg(){
+        fullDis.style.display= "none";
+    }
+</script>
+</body>
+</html>
